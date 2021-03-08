@@ -32,9 +32,9 @@ class BartForSeq2SeqLM(LightningBase):
         from transformers import BartForConditionalGeneration, BartTokenizer
 
         self.tokenizer = BartTokenizer.from_pretrained(
-            "facebook/bart-base")
+            "sshleifer/distilbart-xsum-12-3")
         self.model = BartForConditionalGeneration.from_pretrained(
-            "facebook/bart-base")
+            "sshleifer/distilbart-xsum-12-3")
 
         if self.precision == 16:
             self.model = self.model.half()
