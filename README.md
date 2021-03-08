@@ -8,9 +8,9 @@
 
 ## Citation
 ```
-@misc{pecab,
+@misc{summarizers,
   author       = {Ko, Hyunwoong and Lee, Jungseob and Park, Jinseul},
-  title        = {Summarizers: Opensource text summarization toolkit},
+  title        = {summarizers: Opensource text summarization toolkit},
   howpublished = {\url{https://github.com/hyunwoongko/pecab}},
   year         = {2021},
 }
