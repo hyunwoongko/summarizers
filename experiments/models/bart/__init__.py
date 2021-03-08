@@ -12,14 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from gym.models.bart import BartForSeq2SeqLM
+from experiments.models.bart.bart_for_seq2seq_lm import BartForSeq2SeqLM
 
-model = BartForSeq2SeqLM(
-    cfg_path="../configs",
-    cfg_name="bart_for_text_summarization",
-)
-
-# model.fit(
-#     train_dataloader=YOUR_TRAIN_DATALOADER
-#     val_dataloader=YOUR_VALIDATION_DATALOADER
-# )
+__all__ = [BartForSeq2SeqLM]

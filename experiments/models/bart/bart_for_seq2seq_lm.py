@@ -14,7 +14,7 @@
 
 import torch
 from typing import Dict
-from gym.lightning_base import LightningBase
+from experiments.lightning_base import LightningBase
 
 
 class BartForSeq2SeqLM(LightningBase):
