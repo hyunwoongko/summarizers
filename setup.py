@@ -16,7 +16,7 @@ setup(
         'transformers>=4',
         'torch',
     ],
-    packages=find_packages(exclude=['gym']),
+    packages=find_packages(exclude=['experiments']),
     python_requires='>=3',
     package_data={},
     zip_safe=False,
