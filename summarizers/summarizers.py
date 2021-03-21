@@ -152,12 +152,3 @@ class Summarizers(object):
             summary = summary.replace(token, "")
 
         return summary.strip()
-
-
-if __name__ == '__main__':
-    contents = """Tunip is the Octonauts' head cook and gardener. He is a Vegimal, a half-animal, half-vegetable creature capable of breathing on land as well as underwater. Tunip is very childish and innocent, always wanting to help the Octonauts in any way he can. He is the smallest main character in the Octonauts crew."""
-    summ = Summarizers()
-    o = summ(contents, query="personality of Tunip", prompt="Tunip is very")
-    print(o)
-
-
