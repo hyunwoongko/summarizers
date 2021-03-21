@@ -29,7 +29,7 @@ pip install summarizers
 - If you want GPU acceleration, set param `device='cuda'`.
 ```python
 >>> from summarizers import Summarizers
->>> summ = Summarizers('norma', device='cuda')
+>>> summ = Summarizers('normal', device='cuda')
 ```
 <br>
 
