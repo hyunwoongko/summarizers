@@ -1,7 +1,7 @@
 # summarizers
 [![PyPI version](https://badge.fury.io/py/summarizers.svg)](https://badge.fury.io/py/summarizers)
 ![GitHub](https://img.shields.io/github/license/summarizers/summarizers)
-- `summarizers` is controllable summarization package based on [CTRLsum](https://arxiv.org/abs/2012.04281).
+- `summarizers` is package for controllable summarization based on [CTRLsum](https://arxiv.org/abs/2012.04281).
 - currently, we only supports English. It doesn't work in other languages.
 <br><br>
   
@@ -49,7 +49,7 @@ He is the smallest main character in the Octonauts crew.
 ```
 <br>
 
-### 3. Query focused summarization
+### 3. Query focused Summarization
 - If you want inputted query together, Query focused summarization conducted.
 ```python
 >>> summ(contents, query="main character of Octonauts")
@@ -69,7 +69,7 @@ He is the smallest main character in the Octonauts crew.
 ```
 <br>
 
-### 4. Prompt based summarization
+### 4. Prompt based Summarization
 - You can generate summary that begins with some sequence using param `prompt`.
 - It works like GPT-3's Prompt based generation. (but It doesn't work very well.)
 ```python
@@ -78,7 +78,7 @@ He is the smallest main character in the Octonauts crew.
 ```
 <br>
 
-### 5. Query focused summarization with prompt
+### 5. Query focused Summarization with Prompt
 - You can also inputted both `query` and `prompt`.
 - In this case, a query focus summary is generated that starts with a prompt.
 ```python
@@ -87,9 +87,9 @@ He is the smallest main character in the Octonauts crew.
 ```
 <br>
 
-### 6. Decoding Strategies
-- For generative models, decoding strategies are very important.
-- So, we support variety of options for decoding strategies.
+### 6. Options for Decoding Strategy
+- For generative models, decoding strategy is very important.
+- `summarizers` support variety of options for decoding strategy.
 ```python
 >>> summ(
 ...     contents=contents,
