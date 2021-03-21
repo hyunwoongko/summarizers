@@ -1,7 +1,7 @@
 # summarizers
 [![PyPI version](https://badge.fury.io/py/summarizers.svg)](https://badge.fury.io/py/summarizers)
 ![GitHub](https://img.shields.io/github/license/summarizers/summarizers)
-- `summarizers` is controllable summarization package based on [CTRLsum](https://arxiv.org/abs/2012.04281).
+- `summarizers` is package for controllable summarization based on [CTRLsum](https://arxiv.org/abs/2012.04281).
 - currently, we only supports English. It doesn't work in other languages.
 <br><br>
   
