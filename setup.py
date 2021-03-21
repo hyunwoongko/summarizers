@@ -5,13 +5,13 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='summarizers',
-    version='1.0.0',
+    version='1.0.1',
     description='opensource text summarization toolkit.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Hyunwoong Ko',
     author_email='gusdnd852@naver.com',
-    url='https://github.com/summarizers/summarizers',
+    url='https://github.com/hyunwoongko/summarizers',
     install_requires=[
         'transformers>=4',
         'torch',
