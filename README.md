@@ -1,7 +1,7 @@
 # summarizers
 [![PyPI version](https://badge.fury.io/py/summarizers.svg)](https://badge.fury.io/py/summarizers)
 ![GitHub](https://img.shields.io/github/license/summarizers/summarizers)
-- `summarizers` is package for controllable summarization based [CTRLsum](https://github.com/salesforce/ctrl-sum)
+- `summarizers` is package for controllable summarization based [CTRLsum](https://github.com/salesforce/ctrl-sum).
 - currently, we only supports English. It doesn't work in other languages.
 <br><br>
   
