@@ -50,7 +50,7 @@ He is the smallest main character in the Octonauts crew.
 <br>
 
 ### 3. Query focused Summarization
-- If you want inputted query together, Query focused summarization conducted.
+- If you want to input query together, Query focused summarization conducted.
 ```python
 >>> summ(contents, query="main character of Octonauts")
 'Tunip is the smallest main character in the Octonauts crew.'
@@ -79,7 +79,7 @@ He is the smallest main character in the Octonauts crew.
 <br>
 
 ### 5. Query focused Summarization with Prompt
-- You can also inputted both `query` and `prompt`.
+- You can also input both `query` and `prompt`.
 - In this case, a query focus summary is generated that starts with a prompt.
 ```python
 >>> summ(contents, query="personality of Tunip", prompt="Tunip is very")
