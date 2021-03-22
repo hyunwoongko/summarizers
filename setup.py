@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='summarizers',
-    version='1.0.2',
+    version='1.0.3',
     description='opensource text summarization toolkit.',
     long_description=long_description,
     long_description_content_type='text/markdown',

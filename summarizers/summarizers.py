@@ -36,9 +36,9 @@ class Summarizers(object):
         if type == "normal":
             model_name = f"{model_name_prefix}-cnndm"
         elif type == "paper":
-            model_name = f"{model_name_prefix}-paper"
+            model_name = f"{model_name_prefix}-arxiv"
         elif type == "patent":
-            model_name = f"{model_name_prefix}-patent"
+            model_name = f"{model_name_prefix}-bigpatent"
         else:
             raise Exception(f"Unknown type: {type}")
 
