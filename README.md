@@ -19,7 +19,7 @@ pip install summarizers
 >>> summ = Summarizers()
 ```
 - You can select type of source article between [`normal`, `paper`, `patent`].
-- If you don't inputted any parameter, default type is `normal`.
+- If you don't input any parameter, default type is `normal`.
 ```python
 >>> from summarizers import Summarizers
 >>> summ = Summarizers('normal')  # <-- default.
