@@ -96,7 +96,8 @@ He is the smallest main character in the Octonauts crew.
 ...     num_beams=10,
 ...     top_k=30,
 ...     top_p=0.85,
-...     no_repeat_ngram_size=3,                  
+...     no_repeat_ngram_size=3,      
+...     length_penalty=1.2,
 ... )
 
 ```
