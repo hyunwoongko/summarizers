@@ -1,7 +1,7 @@
 # summarizers
 [![PyPI version](https://badge.fury.io/py/summarizers.svg)](https://badge.fury.io/py/summarizers)
 ![GitHub](https://img.shields.io/github/license/summarizers/summarizers)
-- `summarizers` is package for controllable summarization based on [CTRLsum](https://arxiv.org/abs/2012.04281).
+- `summarizers` is package for controllable summarization based on [CTRLsum](https://github.com/salesforce/ctrl-sum).
 - currently, we only supports English. It doesn't work in other languages.
 <br><br>
   
@@ -50,7 +50,7 @@ He is the smallest main character in the Octonauts crew.
 <br>
 
 ### 3. Query focused Summarization
-- If you want inputted query together, Query focused summarization conducted.
+- If you want to input query together, Query focused summarization conducted.
 ```python
 >>> summ(contents, query="main character of Octonauts")
 'Tunip is the smallest main character in the Octonauts crew.'
@@ -79,7 +79,7 @@ He is the smallest main character in the Octonauts crew.
 <br>
 
 ### 5. Query focused Summarization with Prompt
-- You can also inputted both `query` and `prompt`.
+- You can also input both `query` and `prompt`.
 - In this case, a query focus summary is generated that starts with a prompt.
 ```python
 >>> summ(contents, query="personality of Tunip", prompt="Tunip is very")
