@@ -75,6 +75,7 @@ class Summarizers(object):
         top_k: int = None,
         top_p: float = None,
         no_repeat_ngram_size: int = 4,
+        length_penalty: float = 1.0,
         question_detection: bool = True,
     ) -> str:
         """
@@ -88,6 +89,7 @@ class Summarizers(object):
             top_k (int): number of sample for top-k sampling
             top_p (float): probability for nucleus sampling
             no_repeat_ngram_size (int): no repeat n-gram size
+            length_penalty (float): penalty value for length control
             question_detection (bool): use question prompt template autonomously
 
         Returns:
@@ -125,15 +127,18 @@ class Summarizers(object):
 
         if decoder_input_ids is None:
             output_ids = self.model.generate(
+                max_length=1024,
                 input_ids=tokenized["input_ids"].to(self.device),
                 attention_mask=tokenized["attention_mask"].to(self.device),
                 num_beams=num_beams,
                 top_k=top_k,
                 top_p=top_p,
                 no_repeat_ngram_size=no_repeat_ngram_size,
+                length_penalty=length_penalty,
             )
         else:
             output_ids = self.model.generate(
+                max_length=1024,
                 input_ids=tokenized["input_ids"].to(self.device),
                 attention_mask=tokenized["attention_mask"].to(self.device),
                 decoder_input_ids=decoder_input_ids,
@@ -141,6 +146,7 @@ class Summarizers(object):
                 top_k=top_k,
                 top_p=top_p,
                 no_repeat_ngram_size=no_repeat_ngram_size,
+                length_penalty=length_penalty,
             )
 
         summary = self.tokenizer.decode(output_ids.tolist()[0])
